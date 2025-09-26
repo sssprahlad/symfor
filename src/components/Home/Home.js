@@ -109,6 +109,33 @@ const Home = () => {
                         <p>Vegan</p>
                     </div>
                 </div>
+            
+                <div style={{display:"flex", gap:"20px", marginTop:"20px"}}>
+                    <div>
+                        <img src="./images/breakfast.jpg" alt="img" className="category-img"/>
+                        <p>Breakfast</p>
+                    </div>
+                    <div>
+                        <img src="./images/chocolate.jpg" alt="img" className="category-img"/>
+                        <p>chocolate</p>
+                    </div>
+                    <div>
+                        <img src="./images/chicken-manchurian.jpg" alt="img" className="category-img"/>
+                        <p>Chickeen manchurian</p>
+                    </div>
+                    <div>
+                        <img src="./images/lunch.jpg" alt="img" className="category-img"/>
+                        <p>Lunch</p>
+                    </div>
+                    <div>
+                        <img src="./images/meat.jpg" alt="img" className="category-img"/>
+                        <p>Meat</p>
+                    </div>
+                    <div>
+                        <img src="./images/vegan.jpg" alt="img" className="category-img"/>
+                        <p>Vegan</p>
+                    </div>
+                </div>
 
                 <div className="card-container">
                 <div className="right-part">
@@ -152,7 +179,7 @@ const Home = () => {
             </div>
 
             <div className="sample-container">
-                <h1>Simple and tasty recipes</h1>
+                <h1>Checkout  @foodieland on Instagram</h1>
                 <p> jkefqe lehfowf liehfqndf lwehfoihwqofi weihfiohfe wedfhwoaih</p>
             </div>
             <div style={{display:"flex", gap:"20px", marginTop:"20px"}}>
