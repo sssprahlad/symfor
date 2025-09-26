@@ -108,3 +108,10 @@
     height: 150px;
     width: 150px;
 }
+.sample-container{
+    display: flex;
+    flex-direction: column;
+width: 100%;
+justify-content: center;
+margin: 30px;
+}
