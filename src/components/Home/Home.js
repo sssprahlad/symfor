@@ -50,6 +50,27 @@ const Home = () => {
                     <img src="https://t4.ftcdn.net/jpg/06/09/35/79/240_F_609357995_9f5MTF73kiu6UYAtpJZRT9BFWet4l3fX.jpg" alt="img" className="right-img"/>
                 </div>
             </div>
+            <div className="category-container">
+                <h1>Categories</h1>
+                <div style={{display:"flex", gap:"20px"}}>
+                    <div>
+                        <img src="./images/breakfast.jpg" alt="img" className="category-img"/>
+                        <p>Breakfast</p>
+                    </div>
+                    <div>
+                        <img src="./images/breakfast.jpg" alt="img" className="category-img"/>
+                        <p>chocolate</p>
+                    </div>
+                    <div>
+                        <img src="./images/breakfast.jpg" alt="img" className="category-img"/>
+                        <p>Breakfast</p>
+                    </div>
+                    <div>
+                        <img src="./images/breakfast.jpg" alt="img" className="category-img"/>
+                        <p>Breakfast</p>
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }

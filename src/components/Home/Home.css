@@ -94,3 +94,17 @@
     height: 100%;
     width: 100%;
 }
+
+.category-container{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    width: 100%;
+    
+    /* background: plum; */
+}
+
+.category-img{
+    height: 200px;
+    width: 200px;
+}
