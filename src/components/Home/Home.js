@@ -51,23 +51,31 @@ const Home = () => {
                 </div>
             </div>
             <div className="category-container">
-                <h1>Categories</h1>
-                <div style={{display:"flex", gap:"20px"}}>
+                <h1 style={{}}>Categories</h1>
+                <div style={{display:"flex", gap:"20px", marginTop:"20px"}}>
                     <div>
                         <img src="./images/breakfast.jpg" alt="img" className="category-img"/>
                         <p>Breakfast</p>
                     </div>
                     <div>
-                        <img src="./images/breakfast.jpg" alt="img" className="category-img"/>
+                        <img src="./images/chocolate.jpg" alt="img" className="category-img"/>
                         <p>chocolate</p>
                     </div>
                     <div>
-                        <img src="./images/breakfast.jpg" alt="img" className="category-img"/>
-                        <p>Breakfast</p>
+                        <img src="./images/chicken-manchurian.jpg" alt="img" className="category-img"/>
+                        <p>Chickeen manchurian</p>
                     </div>
                     <div>
-                        <img src="./images/breakfast.jpg" alt="img" className="category-img"/>
-                        <p>Breakfast</p>
+                        <img src="./images/lunch.jpg" alt="img" className="category-img"/>
+                        <p>Lunch</p>
+                    </div>
+                    <div>
+                        <img src="./images/meat.jpg" alt="img" className="category-img"/>
+                        <p>Meat</p>
+                    </div>
+                    <div>
+                        <img src="./images/vegan.jpg" alt="img" className="category-img"/>
+                        <p>Vegan</p>
                     </div>
                 </div>
             </div>
