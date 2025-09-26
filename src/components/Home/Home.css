@@ -69,6 +69,7 @@
     height: 60px;
     width: 60px;
     border-radius: 50%;
+   
     /* border-top-right-coradius: 8px; */
     /* border-top-le */
 }
@@ -93,6 +94,7 @@
 
     height: 100%;
     width: 100%;
+    border-radius: 0px 15px 15px 0px ;
 }
 
 .category-container{
