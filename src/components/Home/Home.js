@@ -5,13 +5,14 @@ import { PiBowlFoodLight } from "react-icons/pi";
 import { CiClock2 } from "react-icons/ci";
 import { GiForkKnifeSpoon } from "react-icons/gi";
 import { CiPlay1 } from "react-icons/ci";
+import Navbar from "../Navbar/Navbar";
 
 const Home = () => {
 
 
     return(
         <div>
-         
+         <Navbar/>
             <div className="card-container">
                 <div className="left-part">
                     <div className="hot-recipe-btn">
@@ -51,7 +52,7 @@ const Home = () => {
                 </div>
             </div>
             <div className="category-container">
-                <h1 style={{}}>Categories</h1>
+                <h1>Categories</h1>
                 <div style={{display:"flex", gap:"20px", marginTop:"20px"}}>
                     <div>
                         <img src="./images/breakfast.jpg" alt="img" className="category-img"/>
