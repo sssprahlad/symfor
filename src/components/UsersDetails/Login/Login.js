@@ -1,12 +1,15 @@
 import "./Login.css"
 import { useState, useContext} from "react";
-import { UserContext } from "../../../context/Context";
+import { useNavigate } from "react-router-dom";
+import { UserContext, } from "../../../context/Context";
+
 
 
     const loginData = [{"username":"sai", "password":"sai"}]
 
 
 const Login = () => {
+    const navigate = useNavigate();
     const [user, setUsers] = useState({ username: "", password: "" });
     const {setIsAuthenticated} = useContext(UserContext);
    
@@ -28,7 +31,9 @@ const handleSubmit = (e) => {
         setIsAuthenticated(true)
         localStorage.setItem("token","true")
         console.log("credential matched")
-
+        navigate("/")
+    }else{
+        alert("credentials wrong")
     }
   }
 

@@ -5,20 +5,27 @@ import Home from "./components/Home/Home";
 import About from "./components/About us/About";
 import Contact from "./components/Contact/Contact";
 import Recipes from "./components/Recipes/Recipes";
-import Blogs from "./components/Blogs/Blogs";
 import Login from "./components/UsersDetails/Login/Login";
+import Blogs from "./components/Blogs/Blogs";
 import { UserProvider,UserContext } from "./context/Context";
-import { useContext } from "react";
+import { useState, useEffect } from "react";
 
-const ProtectedRoute = () => {
-  const { isAuthenticated } = useContext(UserContext);
+// const ProtectedRoute = () => {
+//   const [isAuthenticated, setIsAuthenticated] = useState(false);
+//   const [isLoading, setIsLoading] = useState(true);
 
-  console.log(isAuthenticated,"is Auth")
+//   useEffect(() => {
+//     const token = localStorage.getItem('token');
+//     setIsAuthenticated(!!token);
+//     setIsLoading(false);
+//   }, []);
 
-  return isAuthenticated ? <Outlet /> : <Navigate to="/login" replace />;
-};
+//   if (isLoading) {
+//     return <div>Loading...</div>;
+//   }
 
-
+//   return isAuthenticated ? <Outlet /> : <Navigate to="/login" replace />;
+// };
 
 
 function App() {
@@ -26,19 +33,19 @@ function App() {
     <UserProvider>
       <Router>
         <Routes>
-          {/* Protected Routes */}
-          <Route element={<ProtectedRoute />}>
+       
+          {/* <Route element={<ProtectedRoute />}> */}
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/contacts" element={<Contact />} />
             <Route path="/blogs" element={<Blogs />} />
             <Route path="/recipes" element={<Recipes />} />
-          </Route>
+          {/* </Route> */}
 
-          {/* Public Routes */}
+      
           <Route path="/login" element={<Login />} />
 
-          {/* Fallback */}
+     
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </Router>
